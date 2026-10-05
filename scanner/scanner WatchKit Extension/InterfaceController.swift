@@ -22,7 +22,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func didDeactivate() {
-        super.willDisappear()
+        super.didDeactivate()
         WKExtension.shared().isAutorotating = false
     }
 
